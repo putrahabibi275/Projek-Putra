@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- putramusik.kelompokproduk tree view -->
+    <record id="putramusik_kelompokproduk_view_tree" model="ir.ui.view">
+        <field name="name">putramusik.kelompokproduk.view.tree</field>
+        <field name="model">putramusik.kelompokproduk</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="kode_kelompok"/>
+                <field name="kode_rak"/>
+                <field name="jml_item" />
+                <field name="daftar" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- putramusik.kelompokproduk form view -->
+    <record id="putramusik_kelompokproduk" model="ir.ui.view">
+        <field name="name">putramusik.kelompokproduk.view.form</field>
+        <field name="model">putramusik.kelompokproduk</field>
+        <field name="arch" type="xml">
+            <form string="Kelompok Produk">
+                <sheet>
+                    <group name="Kelompok" string="Posisi Kelompok">
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="kode_kelompok"/>
+                        <field name="jml_item" />
+                    </group>
+
+                    <group name="Rak" string="Posisi Produk">
+                        <field name="kode_rak"/>
+                        <field name="produk_ids" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- putramusik.kelompokproduk action window -->
+    <record id="putramusik_kelompokproduk_action" model="ir.actions.act_window">
+        <field name="name">Kelompok Produk</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">putramusik.kelompokproduk</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="putramusik_kelompokproduk_menu_act"
+        name="Kelompok Produk"
+        parent="putramusik_produk_menu_categ"
+        action="putramusik_kelompokproduk_action"
+        sequence="10"/>
+
+</odoo>

@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_putramusik_kelompokproduk,access.putramusik.kelompokproduk,model_putramusik_kelompokproduk,,1,1,1,1
+access_putramusik_produk,access.putramusik.produk,model_putramusik_produk,,1,1,1,1
+access_putramusik_person,access.putramusik.person,model_putramusik_person,,1,1,1,1
+access_putramusik_kasir,access.putramusik.kasir,model_putramusik_kasir,,1,1,1,1
+access_putramusik_cleaningservice,access.putramusik.cleaningservice,model_putramusik_cleaningservice,,1,1,1,1
+access_putramusik_supplier,access.putramusik.supplier,model_putramusik_supplier,,1,1,1,1
+access_putramusik_penjualan,access.putramusik.penjualan,model_putramusik_penjualan,,1,1,1,1
+access_putramusik_detailpenjualan,access.putramusik.detailpenjualan,model_putramusik_detailpenjualan,,1,1,1,1
+access_putramusik_produkdatang,access.putramusik.produkdatang,model_putramusik_produkdatang,,1,1,1,1
+access_putramusik_penjualanreport,access.putramusik.penjualanreport,model_putramusik_penjualanreport,,1,1,1,1

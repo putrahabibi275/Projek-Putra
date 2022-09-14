@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="produk_datang_view_form_wizzard" model="ir.ui.view">
+        <field name="name">Kedatangan Produk</field>
+        <field name="model">putramusik.produkdatang</field>
+        <field name="arch" type="xml">
+            <form string="Form Kedatangan Produk">
+                <group>
+                    <field name="produk_id"/>
+                    <field name="jumlah"/>
+                </group>
+                <footer>
+                    <button name="button_produk_datang" type="object" string="Input Produk" class="btn btn-warning"/>
+                    <button string="Cancel" special="cancel" class="btn btn-danger"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="produk_datang_action_wizzard" model="ir.actions.act_window">
+        <field name="name">Kedatangan Produk</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">putramusik.produkdatang</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="produk_datang_view_form_wizzard"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="produk_datang_menu_action_wizzard"
+              name="Input Produk"
+              parent="putramusik_menu_root"
+              action="produk_datang_action_wizzard"
+              sequence="48"/>
+</odoo>

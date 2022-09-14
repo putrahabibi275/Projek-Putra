@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="putramusik.list">
+      <field name="name">putramusik list</field>
+      <field name="model">putramusik.putramusik</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="putramusik.action_window">
+      <field name="name">putramusik window</field>
+      <field name="res_model">putramusik.putramusik</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="putramusik.action_server">
+      <field name="name">putramusik server</field>
+      <field name="model_id" ref="model_putramusik_putramusik"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="putramusik" id="putramusik.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="putramusik.menu_1" parent="putramusik.menu_root"/>
+    <menuitem name="Menu 2" id="putramusik.menu_2" parent="putramusik.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="putramusik.menu_1_list" parent="putramusik.menu_1"
+              action="putramusik.action_window"/>
+    <menuitem name="Server to list" id="putramusik" parent="putramusik.menu_2"
+              action="putramusik.action_server"/>
+-->
+  </data>
+</odoo>
