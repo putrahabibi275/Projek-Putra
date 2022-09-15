@@ -22,7 +22,7 @@ class PartnerXlsx(models.AbstractModel):
             sheet.write(row, col, obj.name)
             sheet.write(row, col+1, obj.alamat)
             sheet.write(row, col+2, obj.no_telp)
-            for xxx in obj.barang_id:
+            for xxx in obj.produk_id:
                 sheet.write(row, col+3, xxx.name)
                 col += 1
             row += 1
